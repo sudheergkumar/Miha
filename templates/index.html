@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.jpg') }}" type="image/x-icon" />
+    <title>MIHA</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/jquery.nice-select.min.css"
+      integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+  </head>
+  <body>
+    <div class="hero_area">
+      <div class="hero_bg_box">
+        <img src="{{ url_for('static', filename='images/mihabg.jpg') }}" alt="" />
+      </div>
+      <!-- header section starts -->
+      <header class="header_section">
+        <div class="header_bottom">
+          <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+              <a class="navbar-brand" href="{{ url_for('home') }}"> MIHA </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class=""> </span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('home') }}">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}"> About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('services') }}">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('contact') }}">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('login') }}">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                      <span> Login </span>
+                    </a>
+                  </li>
+                  <form class="form-inline justify-content-center"></form>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- end header section -->
+      <!-- slider section -->
+      <section class="slider_section">
+        <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-10 col-md-11 mx-auto">
+                    <div class="detail-box">
+                      <h1>MIHA <br /></h1>
+                      <h3>
+                        Medical Information & Healthcare Assistance Chatbot
+                      </h3>
+                      <p>Empowering health, one chat at a time</p>
+                      <br /><br /><br />
+                      <p>click below to chat!</p>
+                      <div class="btn-box">
+                        <a href="{{ url_for('chatbot') }}" class="btn1">MIHA</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-10 col-md-11 mx-auto">
+                    <div class="detail-box">
+                      <h1>Seamless Assistance, Anytime, Anywhere</h1>
+                      <h4>
+                        Location-Based Services
+                        <br />
+                        24/7 Support<br />
+                        Emergency Assistance
+                      </h4>
+                      <br /><br />
+                      <p>click below to chat!</p>
+                      <div class="btn-box">
+                        <a href="{{ url_for('chatbot') }}" class="btn1">MIHA </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel_btn-box">
+            <a
+              class="carousel-control-prev"
+              href="#customCarousel1"
+              role="button"
+              data-slide="prev"
+            >
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#customCarousel1"
+              role="button"
+              data-slide="next"
+            >
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- end slider section -->
+    </div>
+
+    <!-- info section -->
+    <section class="info_section">
+      <div class="container">
+        <div class="info_top">
+          <div class="row">
+            <div class="col-md-3">
+              <a class="navbar-brand" href="{{ url_for('home') }}"> MIHA</a>
+            </div>
+            <div class="col-md-4">
+              <div class="social_box">
+                <a href="">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info_bottom">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="info_detail">
+                <h5>Services</h5>
+                <p><ul><li>
+                  Location-based services </li><br />
+                  <li>Medical databases </li><br />
+                  <li>locates nearby hospitals</li><br />
+                  <li>24/7 assistance<br /></li></ul>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+              <div class="">
+                <h5>Useful links</h5>
+                <ul class="info_menu">
+                  <li>
+                    <a href="{{ url_for('home') }}"> Home </a>
+                  </li>
+                  <li>
+                    <a href="{{ url_for('about') }}"> About </a>
+                  </li>
+                  <li>
+                    <a href="{{ url_for('services') }}"> Services </a>
+                  </li>
+                  <li class="mb-0">
+                    <a href="{{ url_for('contact') }}"> Contact Us </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end info section -->
+
+    <!-- footer section -->
+    <footer class="footer_section">
+      <div class="container">
+        <p>
+          &copy; <span id="displayYear"></span> All Rights Reserved By
+          <a href="{{ url_for('home') }}">MIHA</a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer section -->
+
+    <!-- jQuery -->
+    <script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+    <!-- popper js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap js -->
+    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+    <!-- owl slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- nice select -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
+      integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom js -->
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+    <!-- End Google Map -->
+  </body>
+</html>

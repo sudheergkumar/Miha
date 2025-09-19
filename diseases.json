@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Diabetes",
+        "description": "A chronic condition that affects the way the body processes blood sugar (glucose).",
+        "symptoms": "Increased thirst, frequent urination, hunger, fatigue, and blurred vision.",
+        "treatment": "Medications, insulin therapy, diet, and exercise."
+    },
+    {
+        "name": "Hypertension",
+        "description": "A condition in which the force of the blood against the artery walls is too high.",
+        "symptoms": "Often has no symptoms. When symptoms do occur, they usually include headaches, shortness of breath, or nosebleeds.",
+        "treatment": "Lifestyle changes, medications."
+    },
+    {
+        "name": "Asthma",
+        "description": "A condition in which your airways narrow and swell and may produce extra mucus.",
+        "symptoms": "Difficulty breathing, chest pain, cough, and wheezing.",
+        "treatment": "Inhalers, medications."
+    }
+]
